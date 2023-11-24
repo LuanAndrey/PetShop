@@ -12,6 +12,9 @@ namespace PetShop
 {
     public partial class Menu : Form
     {
+        // Objetos globais:
+        Classes.Usuario usuario = new Classes.Usuario();
+        public Menu(Classes.Usuario usuario)
         public Menu()
         {
             InitializeComponent();
