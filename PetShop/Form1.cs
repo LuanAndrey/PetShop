@@ -16,5 +16,15 @@ namespace PetShop
         {
             InitializeComponent();
         }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            // Instanciar a janela de Login:
+            Login janela = new Login();
+            // Mostrar a janela:
+            janela.ShowDialog();
+            // Fechar tudo ao fechar a Login:
+            Application.Exit();
+        }
     }
 }
