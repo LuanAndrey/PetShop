@@ -20,7 +20,7 @@ namespace PetShop
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             // Instanciar um usuario: 
-            Classes.Usuario usuario = new Classes.Usuario();
+            Classes.Funcionario usuario = new Classes.Funcionario();
             usuario.Email = txbEmail.Text;
             usuario.Senha = txbSenha.Text;
 

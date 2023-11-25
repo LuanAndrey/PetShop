@@ -50,6 +50,7 @@
             this.btnServico.TabIndex = 1;
             this.btnServico.Text = "Serviços";
             this.btnServico.UseVisualStyleBackColor = true;
+            this.btnServico.Click += new System.EventHandler(this.btnServico_Click);
             // 
             // btnCaixa
             // 
@@ -69,6 +70,7 @@
             this.Controls.Add(this.btnServico);
             this.Controls.Add(this.btnVendas);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.ResumeLayout(false);
 

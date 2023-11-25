@@ -9,7 +9,7 @@ using System.Web;
 
 namespace PetShop.Classes
 {
-    public class Usuario
+    public class Funcionario
     {
         public int Id { get; set; }
         public string Nome { get; set; }

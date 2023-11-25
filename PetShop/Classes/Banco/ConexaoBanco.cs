@@ -14,7 +14,7 @@ namespace PetShop.Classes.Banco
         // Nas linhas abaixo você poderá mudar as informações da conexão com o bd:
         private const string SERVER = "localhost",
                              PORT = "3306",
-                             DATABASE = "padoca",
+                             DATABASE = "petshop",
                              UID = "root",
                              PWD = "";
 

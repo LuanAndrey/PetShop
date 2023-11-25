@@ -13,11 +13,19 @@ namespace PetShop
     public partial class Menu : Form
     {
         // Objetos globais:
-        Classes.Usuario usuario = new Classes.Usuario();
-        public Menu(Classes.Usuario usuario)
-        public Menu()
+        Classes.Funcionario usuario = new Classes.Funcionario();
+        public Menu(Classes.Funcionario usuario)
         {
             InitializeComponent();
+
+            // Atribuir o usuário local no global:
+            this.usuario = usuario; 
+        }
+
+        private void btnServico_Click(object sender, EventArgs e)
+        {
+            Servicos janela = new Servicos();
+            janela.Show();
         }
     }
 }

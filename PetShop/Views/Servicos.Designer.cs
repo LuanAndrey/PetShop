@@ -1,6 +1,6 @@
 ﻿namespace PetShop
 {
-    partial class Serviços
+    partial class Servicos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.grbPorte = new System.Windows.Forms.GroupBox();
-            this.rdbPequeno = new System.Windows.Forms.RadioButton();
-            this.rdbMedio = new System.Windows.Forms.RadioButton();
             this.rdbGrande = new System.Windows.Forms.RadioButton();
+            this.rdbMedio = new System.Windows.Forms.RadioButton();
+            this.rdbPequeno = new System.Windows.Forms.RadioButton();
             this.grbServico = new System.Windows.Forms.GroupBox();
             this.rdbCombo = new System.Windows.Forms.RadioButton();
             this.rdbTosa = new System.Windows.Forms.RadioButton();
@@ -55,16 +55,17 @@
             this.grbPorte.TabStop = false;
             this.grbPorte.Text = "Porte";
             // 
-            // rdbPequeno
+            // rdbGrande
             // 
-            this.rdbPequeno.AutoSize = true;
-            this.rdbPequeno.Location = new System.Drawing.Point(6, 21);
-            this.rdbPequeno.Name = "rdbPequeno";
-            this.rdbPequeno.Size = new System.Drawing.Size(91, 24);
-            this.rdbPequeno.TabIndex = 0;
-            this.rdbPequeno.TabStop = true;
-            this.rdbPequeno.Text = "Pequeno";
-            this.rdbPequeno.UseVisualStyleBackColor = true;
+            this.rdbGrande.AutoSize = true;
+            this.rdbGrande.Location = new System.Drawing.Point(7, 69);
+            this.rdbGrande.Name = "rdbGrande";
+            this.rdbGrande.Size = new System.Drawing.Size(81, 24);
+            this.rdbGrande.TabIndex = 2;
+            this.rdbGrande.TabStop = true;
+            this.rdbGrande.Text = "Grande";
+            this.rdbGrande.UseVisualStyleBackColor = true;
+            this.rdbGrande.CheckedChanged += new System.EventHandler(this.rdbGrande_CheckedChanged);
             // 
             // rdbMedio
             // 
@@ -76,17 +77,19 @@
             this.rdbMedio.TabStop = true;
             this.rdbMedio.Text = "Medio";
             this.rdbMedio.UseVisualStyleBackColor = true;
+            this.rdbMedio.CheckedChanged += new System.EventHandler(this.rdbMedio_CheckedChanged);
             // 
-            // rdbGrande
+            // rdbPequeno
             // 
-            this.rdbGrande.AutoSize = true;
-            this.rdbGrande.Location = new System.Drawing.Point(7, 69);
-            this.rdbGrande.Name = "rdbGrande";
-            this.rdbGrande.Size = new System.Drawing.Size(81, 24);
-            this.rdbGrande.TabIndex = 2;
-            this.rdbGrande.TabStop = true;
-            this.rdbGrande.Text = "Grande";
-            this.rdbGrande.UseVisualStyleBackColor = true;
+            this.rdbPequeno.AutoSize = true;
+            this.rdbPequeno.Location = new System.Drawing.Point(6, 21);
+            this.rdbPequeno.Name = "rdbPequeno";
+            this.rdbPequeno.Size = new System.Drawing.Size(91, 24);
+            this.rdbPequeno.TabIndex = 0;
+            this.rdbPequeno.TabStop = true;
+            this.rdbPequeno.Text = "Pequeno";
+            this.rdbPequeno.UseVisualStyleBackColor = true;
+            this.rdbPequeno.CheckedChanged += new System.EventHandler(this.rdbPequeno_CheckedChanged);
             // 
             // grbServico
             // 
@@ -111,6 +114,7 @@
             this.rdbCombo.TabStop = true;
             this.rdbCombo.Text = "Banho e Tosa";
             this.rdbCombo.UseVisualStyleBackColor = true;
+            this.rdbCombo.CheckedChanged += new System.EventHandler(this.rdbCombo_CheckedChanged);
             // 
             // rdbTosa
             // 
@@ -122,6 +126,7 @@
             this.rdbTosa.TabStop = true;
             this.rdbTosa.Text = "Tosa";
             this.rdbTosa.UseVisualStyleBackColor = true;
+            this.rdbTosa.CheckedChanged += new System.EventHandler(this.rdbTosa_CheckedChanged);
             // 
             // rdbBanho
             // 
@@ -133,6 +138,7 @@
             this.rdbBanho.TabStop = true;
             this.rdbBanho.Text = "Banho";
             this.rdbBanho.UseVisualStyleBackColor = true;
+            this.rdbBanho.CheckedChanged += new System.EventHandler(this.rdbBanho_CheckedChanged);
             // 
             // btnFinalizar
             // 
@@ -151,8 +157,9 @@
             this.lblValor.Size = new System.Drawing.Size(31, 13);
             this.lblValor.TabIndex = 5;
             this.lblValor.Text = "Valor";
+            this.lblValor.Click += new System.EventHandler(this.lblValor_Click);
             // 
-            // Serviços
+            // Servicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,7 +168,7 @@
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.grbServico);
             this.Controls.Add(this.grbPorte);
-            this.Name = "Serviços";
+            this.Name = "Servicos";
             this.Text = "Serviços";
             this.grbPorte.ResumeLayout(false);
             this.grbPorte.PerformLayout();
