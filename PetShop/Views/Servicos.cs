@@ -15,7 +15,8 @@ namespace PetShop
 {
     public partial class Servicos : Form
     {
-
+        double custoPorte = 0;
+        double custoServico = 0;
         public Servicos()
         {
             InitializeComponent();
@@ -23,28 +24,46 @@ namespace PetShop
 
         private void rdbPequeno_CheckedChanged(object sender, EventArgs e)
         {
-            var porte = 10;
+            if (rdbPequeno.Checked == true)
+            {
+                custoPorte = 10;
+            }
         }
         private void rdbMedio_CheckedChanged(object sender, EventArgs e)
         {
-            var porte = 15;
+            if (rdbMedio.Checked == true)
+            {
+                custoPorte = 20;
+            }
         }
 
         private void rdbGrande_CheckedChanged(object sender, EventArgs e)
         {
-            var porte = 20;
+            if (rdbGrande.Checked == true)
+            {
+                custoPorte = 30;
+            }
         }
         private void rdbBanho_CheckedChanged(object sender, EventArgs e)
         {
-            var servico = 20;
+            if (rdbBanho.Checked == true)
+            {
+                custoServico = 20;
+            }
         }
         private void rdbTosa_CheckedChanged(object sender, EventArgs e)
         {
-            var servico = 30;
+            if (rdbTosa.Checked == true)
+            {
+                custoServico = 30;
+            }
         }
         private void rdbCombo_CheckedChanged(object sender, EventArgs e)
         {
-            var servico = 40;
+            if (rdbCombo.Checked == true)
+            {
+                custoServico = 10;
+            }
         }
 
         private void lblValor_Click(object sender, EventArgs e)
